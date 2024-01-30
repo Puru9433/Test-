@@ -119,6 +119,10 @@ function Hello() {
     var x = 0;
 }
 
+//UseCase- Can be used where the value to be used globally.
+//limitation - Somtimes in long codes the value can be changed, by using the same variable by mistake.
+//Function scope var creates variable scope to the entire function, regaredless of blocks within it
+
 // console.log(x);   //Here we can access the value of the x, because var is globally scoped
 //Exapmple-2
 
@@ -128,6 +132,9 @@ console.log(b);      //Can be updated and redeclared
 
 
 //let example
+
+//UseCases- Declaring variable with let makes the scope of variable blocked, so that it can be used within that scope
+//Limitation - Cannot be re-decalred within the given scope
 //Exapmple-1
 {
     let y = 0;
@@ -144,6 +151,8 @@ console.log(c);       //Can be updated but not re-Declared.
 
 const a = 5;
 
+//UseCases- Declaring variable with let makes the scope of variable blocked, so that it can be used within that scope
+//Limitations- Cannot be re-assigned or re-declared within the same scope
 //const example
 //Exapmple-1
 {
