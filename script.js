@@ -29,7 +29,7 @@ function segregate(arr, val) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].score > val) {
             // return arr[i]
-            newAns.push(arr[i])
+            newAns.push(arr[i].name)
         }
     }
     return newAns
@@ -110,7 +110,7 @@ function Hello() {
     var a = "Hey Whats up"    //Here you can use any i.e var, let and const
 }
 
-// console.log(a);
+//Point 2 --Declerations of var, let and const are hoisted to the top of their scope, but not initialization
 
 
 //var example
@@ -120,6 +120,12 @@ function Hello() {
 }
 
 // console.log(x);   //Here we can access the value of the x, because var is globally scoped
+//Exapmple-2
+
+var b = 5;
+var b = 10;
+console.log(b);      //Can be updated and redeclared
+
 
 //let example
 //Exapmple-1
@@ -128,7 +134,14 @@ function Hello() {
 }
 
 // console.log(y);    //Here you cannot access the value of the y, because let is blocked scope.
-console.log(a);
+
+//Example-2
+let c = 5;
+c = 10;
+
+console.log(c);       //Can be updated but not re-Declared.
+
+
 const a = 5;
 
 //const example
